@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My App - Privacy Policy</title>
+</head>
+<body>
+
+<h1>Game Tweaker</h1>
+
+<h2>Terms Information</h2>
+
+<p>
+Game Tweaker focuses on optimizing your device through standard system configurations.\n\n1. OPTIMIZATION\nThe app applies debug configurations designed to enhance touch response, UI fluidity, and overall gaming stability.\n\n2. SAFE TUNING\nThe tweaks used are standard Android system properties. These are non-permanent and are meant for performance fine-tuning.\n\n3. PERFORMANCE VARIANCE\nBecause every device is unique, performance gains may vary. We encourage users to experiment with different settings to find what works best for their hardware.\n\n4. PRIVACY &amp; ADS\nYour privacy is important. This app collects limited personal information, such as your phone number, for essential account management and security. To keep this tool free for everyone, we also display third-party ads which may use non-personal device identifiers. For more details, please refer to our full Privacy Policy.
+</p>
+
+</body>
+</html>
