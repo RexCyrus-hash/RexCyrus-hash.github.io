@@ -1,17 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="tl">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My App - Privacy Policy</title>
+    
+    <style>
+        /* Base Styles / Background */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Container / Card Box */
+        .container {
+            background-color: #ffffff;
+            max-width: 800px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Titles / Headings */
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 2.2em;
+            margin-bottom: 5px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #3498db;
+            text-align: center;
+            font-size: 1.3em;
+            margin-top: 5px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Terms Sections (Box Design) */
+        .term-box {
+            background-color: #f8f9fa;
+            border-left: 5px solid #3498db;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border-radius: 0 8px 8px 0;
+            transition: transform 0.2s ease;
+        }
+
+        /* Hover effect sa mga box */
+        .term-box:hover {
+            transform: translateX(5px);
+            background-color: #eef7fc;
+        }
+
+        .term-title {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .term-desc {
+            margin: 0;
+            line-height: 1.6;
+            color: #555555;
+        }
+
+        /* Intro Text */
+        .intro-text {
+            font-size: 1.05em;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            color: #444;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 
-<h1>Game Tweaker</h1>
+<div class="container">
+    <h1>Game Tweaker</h1>
+    <h2>Terms Information</h2>
 
-<h2>Terms Information</h2>
+    <p class="intro-text">
+        Game Tweaker focuses on optimizing your device through standard system configurations.
+    </p>
 
-<p>
-Game Tweaker focuses on optimizing your device through standard system configurations.\n\n1. OPTIMIZATION\nThe app applies debug configurations designed to enhance touch response, UI fluidity, and overall gaming stability.\n\n2. SAFE TUNING\nThe tweaks used are standard Android system properties. These are non-permanent and are meant for performance fine-tuning.\n\n3. PERFORMANCE VARIANCE\nBecause every device is unique, performance gains may vary. We encourage users to experiment with different settings to find what works best for their hardware.\n\n4. PRIVACY &amp; ADS\nYour privacy is important. This app collects limited personal information, such as your phone number, for essential account management and security. To keep this tool free for everyone, we also display third-party ads which may use non-personal device identifiers. For more details, please refer to our full Privacy Policy.
-</p>
+    <!-- Section 1 -->
+    <div class="term-box">
+        <span class="term-title">1. OPTIMIZATION</span>
+        <p class="term-desc">
+            The app applies debug configurations designed to enhance touch response, UI fluidity, and overall gaming stability.
+        </p>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="term-box">
+        <span class="term-title">2. SAFE TUNING</span>
+        <p class="term-desc">
+            The tweaks used are standard Android system properties. These are non-permanent and are meant for performance fine-tuning.
+        </p>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="term-box">
+        <span class="term-title">3. PERFORMANCE VARIANCE</span>
+        <p class="term-desc">
+            Because every device is unique, performance gains may vary. We encourage users to experiment with different settings to find what works best for their hardware.
+        </p>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="term-box">
+        <span class="term-title">4. PRIVACY &amp; ADS</span>
+        <p class="term-desc">
+            Your privacy is important. This app collects limited personal information, such as your phone number, for essential account management and security. To keep this tool free for everyone, we also display third-party ads which may use non-personal device identifiers. For more details, please refer to our full Privacy Policy.
+        </p>
+    </div>
+</div>
 
 </body>
 </html>
