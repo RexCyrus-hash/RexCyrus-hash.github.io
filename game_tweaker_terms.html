@@ -3,113 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Tweaker - Terms Information</title>
+    <title>Terms Information - Game Tweaker</title>
     
     <style>
-        /* Base Styles & Background */
+        /* CSS RESET & VARIABLES */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg-color: #0f1115;
+            --card-bg: #161b22;
+            --accent-blue: #00e5ff;
+            --accent-warning: #ff9800;
+            --warning-bg: #1e1810;
+            --text-main: #e6edf3;
+            --text-muted: #8b949e;
+            --border-color: #30363d;
+        }
+
         body {
             font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
-            background-color: #050505;
-            color: #e6edf3;
-            margin: 0;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
             padding: 40px 20px;
             display: flex;
             justify-content: center;
         }
 
-        /* Main Container */
+        /* MAIN CONTAINER */
         .container {
-            background-color: #0f1115;
-            max-width: 800px;
+            max-width: 850px;
             width: 100%;
-            padding: 40px;
-            border-radius: 12px;
-            border: 1px solid #30363d;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
         }
 
-        /* App Logo (Centered Fix) */
-        .app-logo {
+        /* HEADER SECTION */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 25px;
+        }
+
+        header img {
             display: block;
             margin: 0 auto 20px auto;
-            width: 120px;
-            height: auto;
             border-radius: 20px;
             box-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
         }
 
-        /* Titles / Headings */
-        h1 {
-            color: #00E5FF;
-            text-align: center;
-            font-size: 2.2em;
-            margin-bottom: 5px;
+        header h1 {
+            font-size: 2.5rem;
+            color: #ffffff;
             letter-spacing: 1px;
+            margin-bottom: 8px;
         }
 
-        h2 {
-            color: #8b949e;
-            text-align: center;
-            font-size: 1.1em;
-            margin-top: 5px;
-            margin-bottom: 30px;
+        header h1 span {
+            color: var(--accent-blue);
+        }
+
+        .last-updated {
+            font-size: 0.9rem;
+            color: var(--text-muted);
             text-transform: uppercase;
             letter-spacing: 1px;
-            border-bottom: 1px solid #30363d;
-            padding-bottom: 15px;
         }
 
-        /* Intro Text */
         .intro-text {
-            font-size: 1.05em;
-            line-height: 1.6;
-            margin-bottom: 30px;
-            color: #f6f6f6;
-            text-align: center;
+            font-size: 1.05rem;
+            color: var(--text-main);
+            margin-top: 15px;
         }
 
-        /* Terms Sections (Box Design) */
-        .term-box {
-            background-color: #161b22;
-            border-left: 4px solid #00E5FF;
-            border-top: 1px solid #30363d;
-            border-right: 1px solid #30363d;
-            border-bottom: 1px solid #30363d;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 0 8px 8px 0;
+        /* CARD SECTIONS */
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--accent-blue);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
             transition: transform 0.2s ease, border-color 0.2s ease;
         }
 
-        /* Hover effect sa mga box */
-        .term-box:hover {
-            transform: translateX(5px);
-            background-color: #1c2128;
-            border-left-color: #00E5FF;
+        .card:hover {
+            transform: translateY(-2px);
+            border-color: #484f58;
+            border-left-color: var(--accent-blue);
         }
 
-        .term-title {
+        .card.warning-card {
+            border-left-color: var(--accent-warning);
+        }
+
+        .card.warning-card:hover {
+            border-left-color: var(--accent-warning);
+        }
+
+        .card h2 {
+            font-size: 1.25rem;
+            color: #ffffff;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .badge-warning {
+            background-color: var(--accent-warning);
+            color: #000;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
             font-weight: bold;
-            color: #FFFFFF;
-            font-size: 1.1em;
+        }
+
+        /* INNER WARNING BOX */
+        .inner-warning-box {
+            background-color: var(--warning-bg);
+            border: 1px solid #3d2b1d;
+            border-radius: 6px;
+            padding: 18px;
+            margin-top: 20px;
+        }
+
+        .inner-warning-box h3 {
+            color: var(--accent-warning);
+            font-size: 1.05rem;
             margin-bottom: 8px;
-            display: block;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
-        .term-desc {
+        .inner-warning-box p {
+            color: #d2c5b1;
+            font-size: 0.95rem;
             margin: 0;
-            line-height: 1.6;
-            color: #8b949e;
+            line-height: 1.5;
         }
 
-        /* Contact Link Accent */
+        /* LISTS INSIDE CARDS */
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 12px;
+            color: var(--text-muted);
+        }
+
+        ul li::before {
+            content: "•";
+            color: var(--accent-blue);
+            font-weight: bold;
+            font-size: 1.2rem;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+
+        ul.warning-list li::before {
+            color: var(--accent-warning);
+        }
+
+        ul li strong {
+            color: var(--text-main);
+        }
+
+        /* LINKS & CONTACT */
         a {
-            color: #00E5FF;
+            color: var(--accent-blue);
             text-decoration: none;
+            transition: text-decoration 0.2s;
         }
 
         a:hover {
             text-decoration: underline;
+        }
+
+        .contact-box {
+            text-align: center;
+            background: linear-gradient(135deg, #161b22 0%, #1f242d 100%);
+            border: 1px solid var(--accent-blue);
+        }
+
+        .contact-box a {
+            font-weight: bold;
+            font-size: 1.1rem;
         }
     </style>
 </head>
@@ -117,46 +206,93 @@
 
 <div class="container">
 
-    <!-- App Logo -->
-    <img src="ic_gt_tweak_nobackground.png" alt="Game Tweaker Logo" class="app-logo">
-    
-    <h1>Game Tweaker</h1>
-    <h2>Terms Information</h2>
-
-    <p class="intro-text">
-        Game Tweaker focuses on optimizing your device through standard system configurations.
-    </p>
-
-    <!-- Section 1 -->
-    <div class="term-box">
-        <span class="term-title">1. OPTIMIZATION</span>
-        <p class="term-desc">
-            The app applies debug configurations designed to enhance touch response, UI fluidity, and overall gaming stability.
+    <header>
+        <img src="ic_gt_tweak_nobackground.png" alt="App Logo" width="120">
+        <h1><span>Game Tweaker</span> Terms Information</h1>
+        <div class="last-updated">Last Updated: July 03, 2026</div>
+        <p class="intro-text">
+            Game Tweaker focuses on optimizing your device through standard system configurations and non-permanent performance tweaks.
         </p>
+    </header>
+
+    <!-- Optimization Section -->
+    <div class="card">
+        <h2>⚡ 1. System Optimization</h2>
+        <p style="margin-bottom: 15px; color: var(--text-muted);">
+            The app applies debug configurations and performance tweaks designed to enhance touch response, UI fluidity, and overall gaming stability.
+        </p>
+        <ul>
+            <li><strong>Method:</strong> Optimizations are applied using standard Android properties and authorized shell APIs (such as Shizuku).</li>
+            <li><strong>Non-Permanent:</strong> All tweaks are safe, non-permanent, and can be reverted upon reboot or resetting settings.</li>
+        </ul>
     </div>
 
-    <!-- Section 2 -->
-    <div class="term-box">
-        <span class="term-title">2. SAFE TUNING</span>
-        <p class="term-desc">
-            The tweaks used are standard Android system properties. These are non-permanent and are meant for performance fine-tuning.
+    <!-- Safe Tuning Section -->
+    <div class="card">
+        <h2>🛡️ 2. Safe Tuning & System Limits</h2>
+        <p style="margin-bottom: 15px; color: var(--text-muted);">
+            Game Tweaker operates within safe system boundaries without modifying core hardware parameters beyond Android specifications.
         </p>
+        <ul>
+            <li><strong>No Root Required:</strong> Tweak execution relies on standard Android user permissions and shell management.</li>
+            <li><strong>Hardware Safety:</strong> The app does not overclock hardware components directly, reducing thermal or battery wear risks.</li>
+        </ul>
     </div>
 
-    <!-- Section 3 -->
-    <div class="term-box">
-        <span class="term-title">3. PERFORMANCE VARIANCE</span>
-        <p class="term-desc">
-            Because every device is unique, performance gains may vary. We encourage users to experiment with different settings to find what works best for their hardware.
+    <!-- Performance Variance Section -->
+    <div class="card">
+        <h2>📊 3. Performance Variance</h2>
+        <p style="margin-bottom: 15px; color: var(--text-muted);">
+            Because Android devices differ in hardware specifications, kernel builds, and vendor optimizations, results will vary.
         </p>
+        <ul>
+            <li><strong>Device Compatibility:</strong> Performance gains depend on your device's SoC, current RAM capacity, and OS version.</li>
+            <li><strong>Experimentation:</strong> We encourage users to test different preset modes to identify the best setup for their specific hardware.</li>
+        </ul>
     </div>
 
-    <!-- Section 4 -->
-    <div class="term-box">
-        <span class="term-title">4. PRIVACY &amp; ADS</span>
-        <p class="term-desc">
-            Your privacy is important. This app collects limited personal information, such as your Gmail address and device IDs, for essential VIP authorization and security. To keep this tool accessible, we also display third-party ads which may use non-personal device identifiers. For more details, please refer to our full Privacy Policy.
+    <!-- Privacy & Ads Section -->
+    <div class="card">
+        <h2>🔒 4. Account Authorization & Advertising</h2>
+        <p style="margin-bottom: 15px; color: var(--text-muted);">
+            To maintain service operations and security, limited identifier verification is utilized.
         </p>
+        <ul>
+            <li><strong>Account Binding:</strong> Gmail address and device IDs are bound solely for VIP authorization and preventing unauthorized access.</li>
+            <li><strong>Ad Support:</strong> Free access is supported by third-party ad networks (Google AdMob) using non-personal device identifiers.</li>
+        </ul>
+    </div>
+
+    <!-- Disclaimers & Limitation of Liability Section -->
+    <div class="card warning-card">
+        <h2><span class="badge-warning">▲</span> 5. Disclaimers & Limitation of Liability</h2>
+        <p style="margin-bottom: 15px; color: var(--text-muted);">
+            Game Tweaker is provided <strong>"as is"</strong>. We do our best to keep the App stable and useful, but we make no guarantees about uninterrupted performance or identical results on every device.
+        </p>
+        <p style="margin-bottom: 12px; color: var(--text-main);">
+            In particular, you use the following features at your own risk:
+        </p>
+        <ul class="warning-list">
+            <li><strong>Experimental Tweaks:</strong> Advanced performance tweaks — results vary by device model and Android version.</li>
+            <li><strong>Extreme Performance Modes:</strong> Maximize system response — may increase battery consumption and thermal output faster than normal.</li>
+            <li><strong>User Shell Commands (ADB / Shizuku):</strong> You are solely responsible for any custom commands or scripts executed manually through the app interface.</li>
+            <li><strong>Game Compatibility:</strong> Modifications to system properties are meant for UI smoothness and stability, but users must ensure compliance with third-party game anti-cheat terms.</li>
+        </ul>
+
+        <!-- Inner Liability Box -->
+        <div class="inner-warning-box">
+            <h3>▲ Liability Limit</h3>
+            <p>
+                To the fullest extent permitted by law, the developer of Game Tweaker shall not be liable for any device damage, data loss, game account penalties, or other consequences arising from your use of the App or custom user-applied commands.
+            </p>
+        </div>
+    </div>
+
+    <!-- Contact Box -->
+    <div class="card contact-box">
+        <h2>📩 Support & Questions</h2>
+        <p style="color: var(--text-muted); margin-bottom: 10px;">For support inquiries or clarification regarding terms:</p>
+        <a href="mailto:rexcyrusalolino@gmail.com">rexcyrusalolino@gmail.com</a>
     </div>
 
 </div>
