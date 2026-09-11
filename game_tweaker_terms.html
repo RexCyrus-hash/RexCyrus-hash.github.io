@@ -3,69 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My App - Privacy Policy</title>
+    <title>Game Tweaker - Terms Information</title>
     
     <style>
-        /* Base Styles / Background */
+        /* Base Styles & Background */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f7f6;
-            color: #333333;
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+            background-color: #050505;
+            color: #e6edf3;
             margin: 0;
-            padding: 20px;
+            padding: 40px 20px;
             display: flex;
             justify-content: center;
         }
 
-        /* Container / Card Box */
+        /* Main Container */
         .container {
-            background-color: #ffffff;
+            background-color: #0f1115;
             max-width: 800px;
             width: 100%;
             padding: 40px;
             border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid #30363d;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* App Logo (Centered Fix) */
+        .app-logo {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 120px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
         }
 
         /* Titles / Headings */
         h1 {
-            color: #2c3e50;
+            color: #00E5FF;
             text-align: center;
             font-size: 2.2em;
             margin-bottom: 5px;
-            border-bottom: 3px solid #3498db;
-            padding-bottom: 10px;
+            letter-spacing: 1px;
         }
 
         h2 {
-            color: #3498db;
+            color: #8b949e;
             text-align: center;
-            font-size: 1.3em;
+            font-size: 1.1em;
             margin-top: 5px;
             margin-bottom: 30px;
             text-transform: uppercase;
             letter-spacing: 1px;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 15px;
+        }
+
+        /* Intro Text */
+        .intro-text {
+            font-size: 1.05em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #f6f6f6;
+            text-align: center;
         }
 
         /* Terms Sections (Box Design) */
         .term-box {
-            background-color: #f8f9fa;
-            border-left: 5px solid #3498db;
-            padding: 15px 20px;
+            background-color: #161b22;
+            border-left: 4px solid #00E5FF;
+            border-top: 1px solid #30363d;
+            border-right: 1px solid #30363d;
+            border-bottom: 1px solid #30363d;
+            padding: 20px;
             margin-bottom: 20px;
             border-radius: 0 8px 8px 0;
-            transition: transform 0.2s ease;
+            transition: transform 0.2s ease, border-color 0.2s ease;
         }
 
         /* Hover effect sa mga box */
         .term-box:hover {
             transform: translateX(5px);
-            background-color: #eef7fc;
+            background-color: #1c2128;
+            border-left-color: #00E5FF;
         }
 
         .term-title {
             font-weight: bold;
-            color: #2c3e50;
+            color: #FFFFFF;
             font-size: 1.1em;
             margin-bottom: 8px;
             display: block;
@@ -74,22 +99,27 @@
         .term-desc {
             margin: 0;
             line-height: 1.6;
-            color: #555555;
+            color: #8b949e;
         }
 
-        /* Intro Text */
-        .intro-text {
-            font-size: 1.05em;
-            line-height: 1.6;
-            margin-bottom: 25px;
-            color: #444;
-            text-align: center;
+        /* Contact Link Accent */
+        a {
+            color: #00E5FF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
+
+    <!-- App Logo -->
+    <img src="ic_gt_tweak_nobackground.png" alt="Game Tweaker Logo" class="app-logo">
+    
     <h1>Game Tweaker</h1>
     <h2>Terms Information</h2>
 
@@ -125,9 +155,10 @@
     <div class="term-box">
         <span class="term-title">4. PRIVACY &amp; ADS</span>
         <p class="term-desc">
-            Your privacy is important. This app collects limited personal information, such as your phone number, for essential account management and security. To keep this tool free for everyone, we also display third-party ads which may use non-personal device identifiers. For more details, please refer to our full Privacy Policy.
+            Your privacy is important. This app collects limited personal information, such as your Gmail address and device IDs, for essential VIP authorization and security. To keep this tool accessible, we also display third-party ads which may use non-personal device identifiers. For more details, please refer to our full Privacy Policy.
         </p>
     </div>
+
 </div>
 
 </body>
