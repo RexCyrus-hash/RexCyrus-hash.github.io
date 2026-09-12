@@ -52,7 +52,9 @@
             background: transparent;
             border: none;
             outline: none;
+            filter: drop-shadow(0 0 12px rgba(0, 229, 255, 0.4));
         }
+
         header h1 {
             font-size: 2.5rem;
             color: #ffffff;
@@ -213,10 +215,10 @@
     <div class="card">
         <h2>⚡ 1. System Optimization</h2>
         <p style="margin-bottom: 15px; color: var(--text-muted);">
-            The app applies system configurations and performance tweaks designed to enhance touch response, UI fluidity, and overall gaming stability.
+            The app applies standard system configurations and performance tweaks designed to enhance touch response, UI fluidity, and overall gaming stability.
         </p>
         <ul>
-            <li><strong>Method:</strong> Optimizations are applied using standard Android properties and authorized shell APIs (such as Shizuku).</li>
+            <li><strong>Method:</strong> Optimizations are applied using standard Android system APIs and authorized shell permissions (such as Shizuku).</li>
             <li><strong>Revertible & Safe Settings:</strong> Depending on the tweak type, some modifications auto-reset upon reboot, while others persist until manually restored to default settings within the app.</li>
         </ul>
     </div>
@@ -225,11 +227,11 @@
     <div class="card">
         <h2>🛡️ 2. Safe Tuning & System Limits</h2>
         <p style="margin-bottom: 15px; color: var(--text-muted);">
-            Game Tweaker operates within safe system boundaries without modifying core hardware parameters beyond Android specifications.
+            Game Tweaker operates safely within standard Android software boundaries.
         </p>
         <ul>
-            <li><strong>No Root Required:</strong> Tweak execution relies on standard Android user permissions and shell management.</li>
-            <li><strong>Hardware Safety:</strong> The app does not overclock hardware components directly, reducing thermal or battery wear risks.</li>
+            <li><strong>No Root Required:</strong> Tweak execution relies on standard Android user permissions, Game API management, and shell integration.</li>
+            <li><strong>Software Integrity:</strong> The app optimizes software-level rendering, frame pacing, and memory allocation without altering system hardware limits.</li>
         </ul>
     </div>
 
@@ -237,11 +239,11 @@
     <div class="card">
         <h2>📊 3. Performance Variance</h2>
         <p style="margin-bottom: 15px; color: var(--text-muted);">
-            Because Android devices differ in hardware specifications, kernel builds, and vendor optimizations, results will vary.
+            Because Android devices differ in hardware specifications, memory capacity, and OS vendor customizations, results will vary across devices.
         </p>
         <ul>
-            <li><strong>Device Compatibility:</strong> Performance gains depend on your device's SoC, current RAM capacity, and OS version.</li>
-            <li><strong>Experimentation:</strong> We encourage users to test different preset modes to identify the best setup for their specific hardware.</li>
+            <li><strong>Device Compatibility:</strong> Optimization efficacy depends on your device's processor capabilities, available RAM, and Android version.</li>
+            <li><strong>Experimentation:</strong> We encourage users to test different preset modes in the Performance Lab to identify the best setup for their specific device.</li>
         </ul>
     </div>
 
@@ -253,7 +255,7 @@
         </p>
         <ul>
             <li><strong>Third-Party Ads:</strong> Advertisements shown within the app are provided by trusted ad networks (such as Google AdMob).</li>
-            <li><strong>Data Usage:</strong> For details on how advertising partners collect or process non-personal data, please refer to our separate Privacy Policy.</li>
+            <li><strong>Data Usage:</strong> For details on how advertising partners process non-personal identifiers, please refer to our separate Privacy Policy.</li>
         </ul>
     </div>
 
@@ -265,7 +267,7 @@
         </h2>
         
         <p style="margin-bottom: 15px; color: var(--text-muted);">
-            <strong>Game Tweaker</strong> is provided on an "as-is" and "as-available" basis. While our system tweaks are designed for safety and stability, performance enhancements naturally depend on your hardware capabilities and system environment.
+            <strong>Game Tweaker</strong> is provided on an "as-is" and "as-available" basis. While system tweaks are designed for safety and UI responsiveness, performance enhancements depend on your device environment.
         </p>
 
         <p style="margin-bottom: 12px; color: var(--text-main); font-weight: 500;">
@@ -273,17 +275,17 @@
         </p>
 
         <ul>
-            <li><strong>System Property Modifications:</strong> Tweaks adjust system parameters to optimize touch response and background management. Depending on the feature used, tweaks can be reverted either by restarting your device or using the restore/reset option in the app.</li>
-            <li><strong>Third-Party Application Rules:</strong> Game Tweaker does not alter game files or bypass game protocols. However, players remain responsible for complying with the terms of service of individual game titles.</li>
-            <li><strong>Thermal & Power Consumption:</strong> High-performance profiles prioritize execution speed, which may lead to increased battery usage and higher CPU/GPU temperatures during extended gaming sessions.</li>
-            <li><strong>Advanced Operations (Shizuku / Shell):</strong> Executing manual terminal commands or custom scripts requires technical awareness. Users assume full control over any custom inputs entered into the app.</li>
+            <li><strong>System Property Modifications:</strong> Tweaks adjust system parameters to optimize touch latency, surface composition, and background memory management. Tweaks can be reverted either by restarting your device or using the reset options within the app.</li>
+            <li><strong>Third-Party Application Rules:</strong> Game Tweaker does not modify game application files or bypass game servers. Players remain responsible for complying with the terms of service of individual game titles.</li>
+            <li><strong>Resource Usage:</strong> High-performance modes prioritize foreground responsiveness and frame stability, which may increase temporary battery consumption during active gaming sessions.</li>
+            <li><strong>Advanced Operations (Shizuku / Shell):</strong> Executing manual commands or custom scripts through the terminal requires technical awareness. Users assume full responsibility for custom commands executed within the app.</li>
         </ul>
 
         <!-- Developer Exemption / Limitation Box -->
         <div class="notice-banner">
             <h3>🛡️ Developer Liability Exemption</h3>
             <p>
-                Under no circumstances shall the developer of Game Tweaker be held responsible for unexpected system behavior, application conflicts, hardware stress, or third-party game restrictions resulting from user-initiated tweaks or shell executions.
+                Under no circumstances shall the developer of Game Tweaker be held responsible for unexpected system behavior, app conflicts, or third-party game restrictions resulting from user-initiated tweaks or shell executions.
             </p>
         </div>
     </div>
